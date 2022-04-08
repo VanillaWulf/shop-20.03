@@ -1,0 +1,26 @@
+.sales__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sales__item {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 360px;
+    min-height: 260px;
+    background-color: $sales-bkg-color;
+    color: white;
+    @include flex-center;
+    flex-direction: column;
+}
+
+.sales__item--woman {
+    background-image: url(../img/sales-woman-bkg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sales__item--shoes {
+    width: 100%;
+}
