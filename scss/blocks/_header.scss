@@ -1,0 +1,38 @@
+.header {
+    background-color: $black;
+
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+        min-height: 75px;
+        align-items: center;
+    }
+    
+    &__list {
+        display: flex;
+    }
+    
+    &__logo {
+        margin: 0 41px 0 0;
+    }
+    
+    &__link {
+        margin: 0 0 0 34px;
+        display: block;
+    }
+    
+    &__nav {
+        display: none;
+    }
+    
+    &__button {
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        
+        &:hover {
+            background-color: $dark-pink;
+        }
+    }
+}
