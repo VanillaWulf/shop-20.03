@@ -7,32 +7,89 @@
         min-height: 75px;
         align-items: center;
     }
-    
+
     &__list {
         display: flex;
     }
-    
+
     &__logo {
         margin: 0 41px 0 0;
     }
-    
+
     &__link {
         margin: 0 0 0 34px;
         display: block;
+
+        @include mobile {
+            background-color: red;
+        }
     }
-    
+
     &__nav {
         display: none;
     }
-    
+
     &__button {
         border: none;
         background-color: transparent;
         display: flex;
         align-items: center;
-        
+
         &:hover {
             background-color: $dark-pink;
+        }
+    }
+
+    &__logo {
+        width: 44px;
+        height: 38px;
+    }
+
+    &__search {
+        color: white;
+        border-radius: 10px;
+        padding: 10px 35px;
+        border: none;
+        /*  outline: 1px solid black; */
+        background: transparent;
+    }
+
+    &__form {
+        position: relative;
+    }
+
+    &__search:hover {
+        outline: 1px solid $light-pink
+    }
+
+    &__search:focus {
+        background-color: $light-pink;
+    }
+
+    &__form:before {
+        content: '';
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        top: 7px;
+        left: 3px;
+        background-image: url('../img/icon/loupe.svg');
+        background-size: 26px 26px;
+    }
+}
+
+@media (max-width: $desktop-width) {
+    .header {
+        &__link {
+            background-color: green;
+        }
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .header {
+        &__link {
+            display: none;
         }
     }
 }
