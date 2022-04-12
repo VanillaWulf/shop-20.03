@@ -1,5 +1,28 @@
-
 .catalog__item-image {
     width: 460px;
     height: 420px;
 }
+
+.catalog__title {
+    text-align: center;
+}
+
+.catalog__text {
+    text-align: center;
+}
+
+.catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog__item {
+    width: 360px;
+}
+
+.catalog__item-image {
+    width: 100%;
+}
+
+// .catalog__item-image {}

@@ -13,6 +13,17 @@
     color: white;
     @include flex-center;
     flex-direction: column;
+
+    @include tablet {
+        width: 232px;
+        min-height: 167px
+    }
+
+    @include mobile {
+        width: 343px;
+        height: 247px;
+    }
+
 }
 
 .sales__item--woman {
@@ -23,4 +34,12 @@
 
 .sales__item--shoes {
     width: 100%;
+
+    @include tablet {
+        min-height: 116px; 
+    }
+
+    @include mobile {
+        min-height: 111px;
+    }
 }

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
@@ -18,7 +18,10 @@
         <div class="container header__wrp">
             <div class="flex">
                 <img class="header__logo" src="./img/logo-img.png" alt="icon">
-                <img class="header__loupe" src="./img/icon/loupe.svg" alt="loupe">
+                <form class="header__form" action="#">
+                    <label class="visually-hidden" for="seacrh">поиск</label>
+                    <input class="header__search" type="search" placeholder="Search" id="search">
+                </form>
             </div>
             <ul class="header__list">
                 <li class="header__item">
@@ -128,43 +131,67 @@
             </div>
         </section>
         <section class="catalog">
-            <h2 class="catalog__title">Fetured Items</h2>
-            <p class="catalog__text">Shop for items based on what we featured in this week</p>
-            <ul class="catalog__list">
-                <li class="catalog__item">
-                    <img class="catalog__item-image" src="./img/proasdsaduct-1.jpg" alt="product-1" width="460" height="420">
-                    <h3 class="catalog__title">ellery x m'o capsule</h3>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
-                </li>
-                <li>
-                    <img src="./img/product-1.jpg" alt="product-1">
-                    <a href="#">ellery x m'o capsule</a>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/product-1.jpg" alt="product-1">
-                        <!-- <a href="#">ellery x m'o capsule</a> -->
+            <div class="container">
+                <h2 class="catalog__title">Fetured Items</h2>
+                <p class="catalog__text">Shop for items based on what we featured in this week</p>
+                <ul class="catalog__list">
+                    <li class="catalog__item">
+                        <img class="catalog__item-image" src="./img/product-1.jpg" alt="product-1" width="360"
+                            height="420">
+                        <h3 class="catalog__title">ellery x m'o capsule</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
-                            Ellery teams up with Moda Operandi.</p>
+                            Ellery
+                            teams up with Moda Operandi.</p>
                         <p>$52.00</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/product-1.jpg" alt="product-1">
-                    </a>
-                    <h3>ellery x m'o capsule</h3>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
-                </li>
-            </ul>
-            <a href="#">Browse All Product</a>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__item-image" src="./img/product-1.jpg" alt="product-1" width="460"
+                            height="420">
+                        <h3 class="catalog__title">ellery x m'o capsule</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery
+                            teams up with Moda Operandi.</p>
+                        <p>$52.00</p>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__item-image" src="./img/product-1.jpg" alt="product-1" width="460"
+                            height="420">
+                        <h3 class="catalog__title">ellery x m'o capsule</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery
+                            teams up with Moda Operandi.</p>
+                        <p>$52.00</p>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__item-image" src="./img/product-1.jpg" alt="product-1" width="460"
+                            height="420">
+                        <h3 class="catalog__title">ellery x m'o capsule</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery
+                            teams up with Moda Operandi.</p>
+                        <p>$52.00</p>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__item-image" src="./img/product-1.jpg" alt="product-1" width="460"
+                            height="420">
+                        <h3 class="catalog__title">ellery x m'o capsule</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery
+                            teams up with Moda Operandi.</p>
+                        <p>$52.00</p>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__item-image" src="./img/product-1.jpg" alt="product-1" width="460"
+                            height="420">
+                        <h3 class="catalog__title">ellery x m'o capsule</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery
+                            teams up with Moda Operandi.</p>
+                        <p>$52.00</p>
+                    </li>
+                </ul>
+                <a href="#">Browse All Product</a>
+        </section>
         </section>
         <section class="adv">
             <h2>text</h2>

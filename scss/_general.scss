@@ -31,3 +31,15 @@ img {
     clip-path: inset(50%);
     margin: -1px;
 }
+
+@media (max-width: $desktop-width) {
+    .container {
+        width: 734px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .container {
+        width: 343px;
+    }
+}
