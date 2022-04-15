@@ -13,20 +13,23 @@
             padding: 0 0 0 92px;
         }
 
-        @include mobile {
+        @include tablet-mobile-mid {
             min-height: 363px;
             padding: 0 0 0 83px;
         }
     }
 
     .brand__img {
+        width: 50%;
+        object-fit: cover;
+
         @include tablet {
             width: 50%;
             min-height: 370px;
             object-fit: cover;
         }
 
-        @include mobile {
+        @include tablet-mobile-mid {
             display: none;
         }
     }
