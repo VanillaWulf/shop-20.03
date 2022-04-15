@@ -18,11 +18,18 @@
 }
 
 .catalog__item {
-    width: 360px;
+    width: 31.6%;
+
+    @include tablet-mid-width {
+        width: 49%;
+    }
+
+    @include tablet-mobile-mid {
+        width: 100%;
+    }
 }
 
 .catalog__item-image {
     width: 100%;
+    object-fit: cover;
 }
-
-// .catalog__item-image {}
